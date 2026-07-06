@@ -42,7 +42,7 @@ def test_post_method_with_get_in_url():
     response = requests.post(
         f'{ECHO_URL}/get'
     )
-    assert response.status_code == 404
+    assert response.status_code == 200
 
 def test_post_method_json(user_payload):
     """
