@@ -1,16 +1,6 @@
 import requests
 import pytest
-
-ECHO_URL = 'https://postman-echo.com'
-
-@pytest.fixture
-def user_payload():
-    return {
-        "name": "Aleksandr",
-        "age": 28,
-        "isStudent": True,
-        "empty": ""
-    }
+from conftest import ECHO_URL
 
 def test_positive_get_method_query_params():
     """
